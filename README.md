@@ -1,4 +1,4 @@
-# Lipuvai Clothing Brand Website
+#Clothing Brand Website
 
 A modern, responsive clothing brand website built with HTML, CSS, and JavaScript.
 
