@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Lipuvai</title>
+    <meta name="description" content="Explore our premium collection of clothing and accessories at Lipuvai.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">LIPUVAI</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product1.html" class="nav-link active">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Discover our curated collection of premium clothing</p>
+        </div>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="tops">Tops</button>
+                <button class="filter-btn" data-category="bottoms">Bottoms</button>
+                <button class="filter-btn" data-category="accessories">Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <img src="../assets/images/product1.jpg" alt="Premium Cotton T-Shirt" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="1">Quick View</button>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Cotton T-Shirt</h3>
+                        <p class="product-description">Soft, breathable cotton with a modern fit</p>
+                        <p class="product-price">$29.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <img src="../assets/images/product2.jpg" alt="Designer Hoodie" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="2">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Hoodie</h3>
+                        <p class="product-description">Comfortable and stylish for everyday wear</p>
+                        <p class="product-price">$79.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="bottoms">
+                    <div class="product-image">
+                        <img src="../assets/images/product3.jpg" alt="Classic Denim Jeans" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="3">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Denim Jeans</h3>
+                        <p class="product-description">Timeless style with premium denim</p>
+                        <p class="product-price">$89.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <img src="../assets/images/product4.jpg" alt="Luxury Blouse" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="4">Quick View</button>
+                        </div>
+                        <div class="product-badge sale">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Blouse</h3>
+                        <p class="product-description">Elegant design for special occasions</p>
+                        <p class="product-price">
+                            <span class="old-price">$99.99</span>
+                            <span class="new-price">$79.99</span>
+                        </p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="bottoms">
+                    <div class="product-image">
+                        <img src="../assets/images/product5.jpg" alt="Casual Shorts" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="5">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Shorts</h3>
+                        <p class="product-description">Perfect for summer and casual outings</p>
+                        <p class="product-price">$39.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="../assets/images/product6.jpg" alt="Designer Bag" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="6">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Bag</h3>
+                        <p class="product-description">Stylish and functional everyday bag</p>
+                        <p class="product-price">$129.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <img src="../assets/images/product7.jpg" alt="Vintage Denim Jacket" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="7">Quick View</button>
+                        </div>
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Denim Jacket</h3>
+                        <p class="product-description">Classic denim jacket with vintage wash</p>
+                        <p class="product-price">$95.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <img src="../assets/images/product8.jpg" alt="Elegant Summer Dress" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="8">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Summer Dress</h3>
+                        <p class="product-description">Light and breezy dress for warm weather</p>
+                        <p class="product-price">$65.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="../assets/images/product9.jpg" alt="Casual Sneakers" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="9">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Sneakers</h3>
+                        <p class="product-description">Comfortable sneakers for everyday wear</p>
+                        <p class="product-price">$89.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <img src="../assets/images/product10.jpg" alt="Formal Blazer" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="10">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Formal Blazer</h3>
+                        <p class="product-description">Professional blazer for business occasions</p>
+                        <p class="product-price">$149.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <img src="../assets/images/product11.jpg" alt="Cozy Sweater" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="11">Quick View</button>
+                        </div>
+                        <div class="product-badge">Winter</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cozy Sweater</h3>
+                        <p class="product-description">Warm and comfortable knit sweater</p>
+                        <p class="product-price">$75.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="../assets/images/product12.jpg" alt="Trendy Cap" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary quick-view-btn" data-product="12">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Trendy Cap</h3>
+                        <p class="product-description">Stylish cap to complete your look</p>
+                        <p class="product-price">$24.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-product-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-product-title"></h2>
+                    <p id="modal-product-description"></p>
+                    <p class="modal-price" id="modal-product-price"></p>
+                    <div class="size-selector">
+                        <label>Size:</label>
+                        <select id="size-select">
+                            <option value="S">Small</option>
+                            <option value="M">Medium</option>
+                            <option value="L">Large</option>
+                            <option value="XL">Extra Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="qty-btn" id="qty-minus">-</button>
+                            <span id="qty-value">1</span>
+                            <button class="qty-btn" id="qty-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary modal-add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest fashion trends and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LIPUVAI</h3>
+                    <p>Premium clothing for the modern lifestyle. Quality, style, and sustainability in every piece.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="product1.html">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#shipping">Shipping Info</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#size-guide">Size Guide</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lipuvai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
