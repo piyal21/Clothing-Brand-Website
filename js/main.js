@@ -75,7 +75,7 @@ function initProductModal() {
     const closeModal = document.querySelector('.close-modal');
     const modalAddCart = document.querySelector('.modal-add-cart');
 
-    
+    // Product data - dynamically determine image path based on current page
     const getImagePath = (imageName) => {
         const currentPath = window.location.pathname;
         if (currentPath.includes('/products/')) {
